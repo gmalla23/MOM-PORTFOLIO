@@ -16,14 +16,15 @@
                     <img src="images/logo2.png" class="logo">
                     <ul id="sidemenu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="http://127.0.0.1:5500/index.html#About">About</a></li>
-                        <li><a href="http://127.0.0.1:5500/index.html#portfolio">Portfolio</a></li>
-                        <li><a href="http://127.0.0.1:5500/index.html#contact">Contact</a></li>
+                        <li><a href="http://gmalla23.github.io/#About">About</a></li>
+                        <li><a href="http://gmalla23.github.io/#portfolio">Portfolio</a></li>
+                        <li><a href="http://gmalla23.github.io/#contact">Contact</a></li>
+                        <div class="iconc"><i class="fas fa-times" onclick="closemenu()"></i></div>
                         <style>#header{ width: 100%;
                             height: 0vh;background-image: none;background-size: 0px;
                             background-position: none;} </style>
                     </ul>
-                    
+                    <div class="icono"><i class="fas fa-bars" onclick="openmenu()"></i></div>
                 </nav>    
                    
             </div>
@@ -82,3 +83,16 @@
                         <a href="c:\Users\yello\Desktop\Projects Tableau\Project part 3\Performance Optimization with stockmarket Data.pdf"><i class="fa fa-external-link-alt"></i></a>
                     </div>
                 </div>
+                <script>
+                    var sidemenu = document.getElementById("sidemenu")
+                    function openmenu(){
+                        sidemenu.style.right = "0";
+                    }
+                    function closemenu(){
+                        sidemenu.style.right = "-200px";
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
