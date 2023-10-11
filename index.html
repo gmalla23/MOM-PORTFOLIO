@@ -10,7 +10,7 @@
     </head>
     <body>
       <div id="header">
-        <div class="container">
+        <div class="container">            
             <nav>
                 <img src="images/logo2.png" class="logo">
                 <ul id="sidemenu">
@@ -18,16 +18,11 @@
                     <li><a href="#About">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <div class="iconc"><i class="fas fa-times" onclick="closemenu()"></i></div>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <!--
-             <div class="header-text">
-                  <p>Data Analyst</p>
-                  <h1>Hello,<br> This is <span>G</span>eeta.</h1>
-             </div>
-             -->
+                <div class="icono"><i class="fas fa-bars" onclick="openmenu()"></i></div>
+            </nav>    
+                
         </div>
       </div>
 
@@ -41,15 +36,14 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"> About Me </h1>
-                    <p> Passionate about helping businesses grow and succeed using analytics. 
-                        Extensive portfolio of work exhibiting analytical capabilities using 
-                        spreadsheets, SQL, Asana and Tableau.<br>
-
-                        A Pathstream certified Data Analyst/Business Analyst, 
+                    <p class="aboutme"> A Pathstream certified Data Analyst/Business Analyst, 
                         trained Quality Assurance Manual and Automation Tester 
                         with over ten years of work experience at companies like Walmart, 
                         Educational Institutions like Huntington Learning Center
-                        and small businesses.
+                        and small businesses.<br>
+                        Passionate about helping businesses grow and succeed using analytics. 
+                        Extensive portfolio of work exhibiting analytical capabilities using 
+                        spreadsheets, SQL, Asana and Tableau.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -57,26 +51,64 @@
                         <p class="tab-links"onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                        
-                        <ul> 
-                            <li><span>Analytics</span><br>Agile Project Delivery<br>Agile Project Management Methodology<br>Analytics Business Analytics<br>Asana<br>Dashboards<br>Data Analysis<br>Data Visualization<br>Project Charter<br>Project Management<br>Scope Management<br>Spreadsheets<br>Stakeholder Management<br>Tableau<br>Work Breakdown Structure</li>
-                            <li><span>Testing</span><br>Selenium3.0<br>TestNg<br>Selenium Grid2<br>Automation Framework<br>SVN<br>Jenkins<br>Maven<br>JIRA/Confluence<br>MS Excel<br>HTML<br>Java Script<br>Java<br>SQL<br>Smoke Testing<br>Functional Testing<br>Integration Testing<br>Regression Testing<br>GUI Testing<br>System and User Acceptance Testing</li>
-                            <li><span>Operating Systems</span><br>Windows<br>MAC OS X<br>UNIX</li>
+                        <ul class="list1">
+                            <p><span class="purple">Analytics</span></p><br>
+                            <li>Agile Project Delivery</li>
+                            <li>Agile Project Management Methodology</li>
+                            <li>Analytics Business Analytics</li>
+                            <li>Asana</li>
+                            <li>Dashboards</li>
+                            <li>Data Analysis</li>
+                            <li>Data Visualization</li>
+                            <li>Project Charter</li>
+                            <li>Project Management</li>
+                            <li>Scope Management</li>
+                            <li>Spreadsheets</li>
+                            <li>Stakeholder Management</li>
+                            <li>Tableau</li>
+                            <li>Work Breakdown Structure</li>                                                       
                         </ul>
+                        <ul class="list1">
+                            <p><span class="purple">Testing</span></p><br>
+                            <li>Selenium3.0</li>
+                            <li>TestNg</li>
+                            <li>Selenium Grid2</li>
+                            <li>Automation Framework</li>
+                            <li>SVN</li>
+                            <li>Jenkins</li>
+                            <li>Maven</li>
+                            <li>JIRA/Confluence</li>
+                            <li>MS Excel</li>
+                            <li>HTML</li>
+                            <li>Java Script</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>Smoke Testing</li>
+                            <li>Functional Testing</li>
+                            <li>Integration Testing</li>
+                            <li>Regression Testing</li>
+                            <li>GUI Testing</li>
+                            <li>System and User Acceptance Testing</li>                                                      
+                        </ul>
+                        <ul class="list1">
+                            <p><span class="purple">Operating Systems</span></p><br>
+                            <li>Windows</li>  
+                            <li>MAC OS </li>
+                            <li>UNIX</li>
+                        </ul>                                                                      
                     </div>
                     <div class="tab-contents" id="experience">
-                        <ul> 
-                            <li><span>2020 Sep to till date</span><br>Walmart<br>Electronics Sales Associate<br>Columbus Ohio</li>
-                            <li><span>2020 Jan to till date</span><br>Huntington Learning Center<br>Mathematician<br>Columbus Ohio</li>
-                            
+                        <ul class="list1"> 
+                            <li><span class="purple">2020 Sep to till date</span><br>Walmart<br>Electronics Sales Associate<br>Columbus Ohio</li><br>
+                            <li><span class="purple">2020 Jan to till date</span><br>Huntington Learning Center<br>Mathematician<br>Columbus Ohio</li><br>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
-                        <ul> 
-                            <li><span>Pathstream</span><br>Business Analysis and Operations Certificate<br><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="9a65310d-980d-4c0c-9e3a-e84f4d2a0e0b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script></li>
-                            <li><span>Teklabs</span><br>Quality Assurance Manual and Automation Testing Training<br></li>
-                            <li><span>Andhra University</span><br>Master of Science in Applied Mathematics</li>
-                            <li><span>Andhra University</span><br>Bachelor of Science in Electronics</li>
+                        <ul class="list1"> 
+                            <li><span class="purple">Pathstream</span><br>Business Analysis and Operations Certificate<br><div data-iframe-width="150" data-iframe-height="150" data-share-badge-id="9a65310d-980d-4c0c-9e3a-e84f4d2a0e0b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script></li><br>
+                            <li><span class="purple">Teklabs</span><br>Quality Assurance Manual and Automation Testing Training</li><br>
+                            <li><span class="purple">Andhra University</span><br>Master of Science in Applied Mathematics</li><br>
+                            <li><span class="purple">Andhra University</span><br>Bachelor of Science in Electronics</li><br>
                         </ul>
                     </div>
                 </div>
@@ -87,7 +119,7 @@
       <div id="portfolio">
          <div class="container">
             <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
+            <div class="work-list" id="worklist">
                 <div class="work">
                     <img src="images/SeriesA.png">
                     <div class="layer">
@@ -114,6 +146,8 @@
                         <a href="#"><i class="fa fa-external-link-alt"></i></a>
                     </div>
                 </div>
+        <!--
+             <div class="disappear" id="Seemore">
                 <div class="work">
                     <img src="images/Listings123.png">
                     <div class="layer">
@@ -138,8 +172,19 @@
                         <a href="c:\Users\yello\Desktop\Projects Tableau\Project part 3\Performance Optimization with stockmarket Data.pdf"><i class="fa fa-external-link-alt"></i></a>
                     </div>
                 </div>
+             </div>
+             -->
+             <!--
+                <script>
+                    function myFunction() {
+                       var element = document.getElementById("Seemore");                         
+                       element.style.display ='flex';             
+                    }
+                 </script>
+              <a class="btn" onclick="myFunction()">See more</a> --> 
+                          
             </div>
-            <a href="#" class="btn">See more</a>
+            <a class="btn" href="portfolio1.html">See more</a>
          </div>
       </div>
       <!-- -------------contact ----------------------------------->
@@ -168,7 +213,24 @@
            </div> 
         </div>
       </div>
-
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxWRAFlngCkKOsArYxfMWPah7wc_spQXUwb2-DFWGpz5nFX4g-beLVR1PaiBKX3Ybk5lQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML= ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
       
       <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -192,24 +254,6 @@
         function closemenu(){
             sidemenu.style.right = "-200px";
         }
-      </script>
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxWRAFlngCkKOsArYxfMWPah7wc_spQXUwb2-DFWGpz5nFX4g-beLVR1PaiBKX3Ybk5lQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML= "Message Sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML= ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
       </script>
     </body>
 </html>

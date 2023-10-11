@@ -18,6 +18,7 @@ body{
     background-size: cover;
     background-position: center;
 }
+
 .container{
     padding: 10px 10%;
 }
@@ -84,6 +85,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 35px;
 }
 .about-col-1{
     flex-basis: 35%;
@@ -101,6 +103,10 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #080808;
 
+}
+.aboutme{
+    font-size: 13px;
+    font-weight: 500;
 }
 .tab-titles{
     display: flex;
@@ -127,19 +133,21 @@ nav ul li a:hover::after{
 .tab-links.active-link::after{
     width: 50%;
 }
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-.tab-contents ul li span{
-    color: #b54769;
-    font-size: 14px;
-}
 .tab-contents{
     display: none;
 }
 .tab-contents.active-tab{
-    display: block;
+    display: flex;
+}
+.list1{
+    list-style: none;
+    padding-right: 10px;
+}
+.purple{
+    color: #ff004f;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /*--------------------portfolio-------------------------*/
 #portfolio{
@@ -149,7 +157,7 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 .work{
     border-radius: 10px;
@@ -206,8 +214,28 @@ nav ul li a:hover::after{
     height: 100%;
 }
 /*-----------------------see more----------------*/
+/*--
+.disappear{
+    display: inline-block;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 35px;    
+}
+.disappear.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.disappear img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+--*/
 .btn{
     display: block;
+    background: #ff004f;
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #ff004f;
@@ -218,8 +246,9 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #fff;
 }
+
 /*---------------------contact me-----------*/
 .contact-left{
     flex-basis: 35%;
@@ -277,7 +306,10 @@ form .btn2{
 
 }
 /*------------------ css for small screen--------*/
-nav.fas{
+.iconc{
+    display: none;
+}
+.icono{
     display: none;
 }
 @media only screen and (max-width: 600px){
@@ -291,7 +323,11 @@ nav.fas{
     .header-text h1{
         font-size: 30px;
     }
-    nav.fas{
+    .icono{
+        display: block;
+        font-size: 25px;
+    }
+    .iconc{
         display: block;
         font-size: 25px;
     }
@@ -311,7 +347,7 @@ nav.fas{
         margin: 25px;
 
     }
-    nav ul .fas{
+    .iconc{
         position: absolute;
         top: 25px;
         left: 25px;
