@@ -105,8 +105,9 @@ nav ul li a:hover::after{
 
 }
 .aboutme{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
+    justify-content: space-evenly;
 }
 .tab-titles{
     display: flex;
